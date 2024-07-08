@@ -10,6 +10,8 @@ function main(args) {
         console.error(USAGE)
         return 1
     }
+    number = parseInt(args[2])
+    console.log(number)
     return 0
 }
 
