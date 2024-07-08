@@ -3,9 +3,14 @@
 
 const process = require('node:process');
 
+const USAGE = "node fizzbuzz_ts <number>"
+
 function main(args) {
-    console.log(args)
-    return 1;
+    if (args.length != 3) {
+        console.error(USAGE)
+        return 1
+    }
+    return 0
 }
 
 process.exit(main(process.argv))
