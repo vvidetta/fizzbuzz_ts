@@ -1,0 +1,11 @@
+{
+  "name": "fizzbuzz_ts",
+  "version": "1.0.0",
+  "description": "Fizzbuzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Vito Videtta",
+  "license": "ISC"
+}
