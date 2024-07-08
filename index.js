@@ -3,8 +3,9 @@
 
 const process = require('node:process');
 
-function main() {
+function main(args) {
+    console.log(args)
     return 1;
 }
 
-process.exit(main())
+process.exit(main(process.argv))
