@@ -5,13 +5,18 @@ const process = require('node:process');
 
 const USAGE = "node fizzbuzz_ts <number>"
 
+function fizzbuzz(number) {
+    return number
+}
+
 function main(args) {
     if (args.length != 3) {
         console.error(USAGE)
         return 1
     }
     number = parseInt(args[2])
-    console.log(number)
+    result = fizzbuzz(number)
+    console.log(result)
     return 0
 }
 
