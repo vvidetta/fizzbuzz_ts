@@ -9,4 +9,7 @@ describe("fizzbuzz tests", () =>{
   test("fizzbuzz of 2 is 2", () =>{
     expect(fizzbuzz(2)).toBe("2");
   });
+  test("fizzbuzz of 3 is fizz", () =>{
+    expect(fizzbuzz(3)).toBe("fizz");
+  });
 });
