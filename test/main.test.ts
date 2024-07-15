@@ -3,10 +3,13 @@
 import { main, USAGE } from "../src/main"
 
 describe("main", () => {
-  test("it prints usage to stderr if insufficient args are passed", () => {
+  it.each([
+    [[]],
+  ])("prints usage to stderr if insufficient args are passed", (args: Array<string>) => {
     const errorSpy = jest.spyOn(console, "error");
 
-    main([]);
+    let returnCode: number = main(args);
     expect(errorSpy).toHaveBeenCalledWith(USAGE);
+    expect(returnCode).toBe(1);
   });
 });
