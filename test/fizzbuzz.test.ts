@@ -9,6 +9,7 @@ describe("fizzbuzz", () =>{
     [3, "fizz"],
     [4, "4"],
     [5, "buzz"],
+    [6, "fizz"],
   ])("of '%s' is '%s'", (input: number, expected_output: string) => {
     expect(fizzbuzz(input)).toBe(expected_output);
   })
