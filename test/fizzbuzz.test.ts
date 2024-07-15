@@ -18,6 +18,7 @@ describe("fizzbuzz", () =>{
     [12, "fizz"],
     [13, "13"],
     [14, "14"],
+    [15, "fizzbuzz"],
   ])("of '%s' is '%s'", (input: number, expected_output: string) => {
     expect(fizzbuzz(input)).toBe(expected_output);
   })
