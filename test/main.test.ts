@@ -5,6 +5,8 @@ import { main, USAGE } from "../src/main"
 describe("main", () => {
   it.each([
     [[]],
+    [["path/to/node",]],
+    [["path/to/node", "path/to/script",]],
   ])("prints usage to stderr if insufficient args are passed", (args: Array<string>) => {
     const errorSpy = jest.spyOn(console, "error");
 
