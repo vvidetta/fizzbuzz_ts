@@ -2,9 +2,9 @@
   "name": "fizzbuzz_ts",
   "version": "1.0.0",
   "description": "Fizzbuzz",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "bin": {
-    "fizzbuzz": "./src/index.js"
+    "fizzbuzz": "./dist/index.js"
   },
   "scripts": {
     "test": "jest"

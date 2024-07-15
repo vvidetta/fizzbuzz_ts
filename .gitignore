@@ -1,3 +1,4 @@
 # Copyright (C) 2024 Vito Videtta. All rights reserved.
+dist/
 node_modules/
 *.js
