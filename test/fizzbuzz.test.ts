@@ -2,14 +2,12 @@
 
 import { fizzbuzz } from '../src/fizzbuzz';
 
-describe("fizzbuzz tests", () =>{
-  test("fizzbuzz of 1 is 1", () =>{
-    expect(fizzbuzz(1)).toBe("1");
-  });
-  test("fizzbuzz of 2 is 2", () =>{
-    expect(fizzbuzz(2)).toBe("2");
-  });
-  test("fizzbuzz of 3 is fizz", () =>{
-    expect(fizzbuzz(3)).toBe("fizz");
-  });
+describe("fizzbuzz", () =>{
+  it.each([
+    [1, "1"],
+    [2, "2"],
+    [3, "fizz"],
+  ])("of '%s' is '%s'", (input: number, expected_output: string) => {
+    expect(fizzbuzz(input)).toBe(expected_output);
+  })
 });
