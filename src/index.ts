@@ -2,7 +2,6 @@
 // Copyright (C) 2024 Vito Videtta. All rights reserved.
 
 const fizzbuzz = require('./fizzbuzz');
-//const process = require('node:process');
 
 const USAGE = "node fizzbuzz_ts <number>"
 
